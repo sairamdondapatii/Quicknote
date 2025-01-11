@@ -85,7 +85,7 @@ const Note = () => {
             return (
                 <div className={styles.note}  key={id}>
                     <h1>Title: {title}</h1>
-                    <textarea className={styles.textarea}  type='text' defaultValue={body} onChange={(e)=> setNoteBody(e.target.value)}/>
+                    <textarea className={styles.textarea}  type='text' defaultValue={body} autofocus onChange={(e)=> setNoteBody(e.target.value)}/>
                     {/* <p>{category}</p>
                     <p>{authour}</p> */}
                     <div className={styles.btngroup}>
